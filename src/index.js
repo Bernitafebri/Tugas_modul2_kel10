@@ -19,6 +19,14 @@ const des = " Rendang merupakan masakan yang berasal dari Minangkabau, terbuat d
 const des1 = "Sup daging dengan kuah kental berwarna hitam ini merupakan makanan khas yang berasal dari Jawa Timur. Warna hitam gelap pada rawon dihasilkan oleh kluwek dicampur dengan potongan daging sapi yang lembut. Rawon biasanya disajikan dengan nasi, tauge, daun bawang, telur asin, dan daun kerupuk udang sebagai pelengkap.";
 const des2 = "Berbeda dari sate pada umumnya yang berupa tusukan potongan daging, sate lilit berbentuk gumpalan adonan yang terbuat dari daging yang membalut tusuk sate. Selain itu, sate ini juga tidak dihidangkan dengan bumbu kacang, karena bumbu adonannya sudah kaya akan cita rasa.";
 
+const food = [
+  { image: img , name: "Rendang", desc: des },
+  { image: img1, name: "Rawon", desc: des1 },
+  { image: img2, name: "Sate Lilit", desc: des2  },
+];
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,25 +39,15 @@ ReactDOM.render(
       image={Gambar}/>
     <Quotes author="Orang" quotes={quotes} /> */}
 
-    <Foods 
-        name="Rendang" 
-        desc={des} 
-        image={img}  
-        name1="Rawon"
-        desc1={des1}
-        image1={img1} 
-        name2="Sate Lilit" 
-        desc2={des2} 
-        image2={img2}
+    <Foods food={food}
     
     />
 
     <Footer 
     made="Made by Kelompok 10"
-    auth1="Bernita" 
+    auth1="Bernita"
     auth2="Fadhil"
     />
-
 
 
 

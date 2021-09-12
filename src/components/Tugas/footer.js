@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer(props) {
     const {made, auth1, auth2 } = props;
     return (
-        <div className="flex flex-col items-center justify-center bg-gray-100 shadow-md"
+        <div className="flex flex-col items-center justify-center bg-gray-100 shadow-md animate-pulse"
             style={{ height: "70px" }}
             >
             <h3 className="font-bold text-xl">{made}</h3>
